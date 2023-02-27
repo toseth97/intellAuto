@@ -1,8 +1,9 @@
+import Navigation from "./components/Navigation";
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Intell Automated Systems</h1>
+                <Navigation />
             </header>
         </div>
     );

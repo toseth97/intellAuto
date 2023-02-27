@@ -1,0 +1,33 @@
+:root{
+    --nav_back: #37517e;
+    --white_text: #ffffff
+}
+
+.Navigation_header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--nav_back);
+    color: var(--white_text);
+}
+
+.brand_name{
+    font-size: 2.5rem;
+}
+
+.unordered_list{
+    list-style: none;
+}
+.list_item{
+    cursor: pointer;
+    height: 100%;
+}
+.list_item a{
+    height: 100%;
+    padding:1em;
+    transition: .3s ease;
+}
+.list_item a:hover{
+    color: #00a6eb; 
+}
+
