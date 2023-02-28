@@ -1,10 +1,10 @@
-import Navigation from "./components/Navigation";
+import Frontpage from "./components/Frontpage";
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Navigation />
+                <Frontpage />
             </header>
         </div>
     );

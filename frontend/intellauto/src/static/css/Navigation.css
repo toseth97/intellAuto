@@ -4,6 +4,11 @@
     --light_blue: #00a6eb;
 }
 
+.frontpage{
+    flex-direction: column;
+    width: 100%;
+}
+
 .Navigation_header{
     width: 100%;
     position: fixed;

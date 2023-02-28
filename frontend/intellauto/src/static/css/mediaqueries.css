@@ -27,15 +27,15 @@
     
     .unordered_list.active > .list_item:nth-child(1){
         left: 0;
-        animation: slidein .5s ease .2s forwards ;
+        animation: slidein .5s ease .4s forwards ;
     }
     .unordered_list.active > .list_item:nth-child(2){
         left: 0;
-        animation: slidein .5s ease .3s forwards ;
+        animation: slidein .5s ease .6s forwards ;
     }
     .unordered_list.active > .list_item:nth-child(3){
         left: 0;
-        animation: slidein .5s ease .4s forwards ;
+        animation: slidein .5s ease .8s forwards ;
     }
 
     @keyframes slidein {
