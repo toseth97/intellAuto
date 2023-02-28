@@ -3,8 +3,9 @@ import Navigation from "./Navigation";
 
 const Frontpage = () => {
     return (
-        <section className="flex frontpage ">
+        <section className=" frontpage ">
             <Navigation />
+            <div className="hero_section container"></div>
         </section>
     );
 };

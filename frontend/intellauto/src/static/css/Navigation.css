@@ -4,18 +4,16 @@
     --light_blue: #00a6eb;
 }
 
-.frontpage{
-    flex-direction: column;
+.Nav_hero{
+    position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .Navigation_header{
     width: 100%;
-    position: fixed;
-    top: 0;
     background-color: var(--nav_back);
     color: var(--white_text);
-    position: relative;
     z-index: 9;
 }
 
@@ -31,8 +29,8 @@
 .list_item{
     cursor: pointer;
     width: 8em;
-    padding: 1em 0;
     text-align: center;
+    padding: 1em 0;
 }
 .list_item a{
     padding: 1em 0;

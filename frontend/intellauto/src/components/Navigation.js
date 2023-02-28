@@ -8,7 +8,7 @@ const Navigation = () => {
         setClicked(!clicked);
     };
     return (
-        <header className="Navigation_header flex justify-center">
+        <header className="Nav_hero flex justify-center">
             <nav className="Navigation_header padding_1_side flex justify-between">
                 <h1 className="brand_name">
                     <a href="home" className="anchor_">
