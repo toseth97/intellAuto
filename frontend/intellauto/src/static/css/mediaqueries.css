@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .menu{
+        display: flex;
+    }
+    .unordered_list{
+        display: none;
+    }
+    .padding_1_side{
+        padding: 0 1em;
+    }
+
+
+}
+

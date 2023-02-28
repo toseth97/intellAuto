@@ -31,3 +31,52 @@
     color: #00a6eb; 
 }
 
+.menu{
+    height: 2.5em;
+    width: 4em;
+    border: 2px solid #00a6eb;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.bar{
+    width: 1.8em;
+    height: 2px;
+    background-color: var(--white_text);
+    border-radius: 50%;
+    position: relative;
+    transition: .5s ease;
+}
+
+.bar::before{
+    transform: translateY(-10px);
+}
+.bar::after{
+    transform: translateY(10px);
+}
+.bar::after, .bar::before{
+    content: "";
+    position: absolute;
+    background-color: var(--white_text);
+    width: inherit;
+    height: inherit;
+    transition: .5s ease;
+}
+.menu_clicked.bar{
+    background-color: transparent;
+    transform: rotate(180deg);
+    
+}
+.menu_clicked.bar::before{
+    background-color: #00a6eb;
+    transform: rotate(135deg);
+    
+}
+.menu_clicked.bar::after{
+    background-color: #00a6eb;
+    transform: rotate(45deg);
+}
+
+.menu.glow{
+    box-shadow: 0px 0px 5px 0px #00a6eb;
+}
