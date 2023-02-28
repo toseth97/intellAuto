@@ -10,22 +10,27 @@
     top: 0;
     background-color: var(--nav_back);
     color: var(--white_text);
+    position: relative;
+    z-index: 9;
 }
 
 .brand_name{
     font-size: 2.5rem;
+    z-index: 8;
 }
 
 .unordered_list{
     list-style: none;
+    transition: .5s ease;
 }
 .list_item{
     cursor: pointer;
-    height: 100%;
+    width: 8em;
+    padding: 1em 0;
+    text-align: center;
 }
 .list_item a{
-    height: 100%;
-    padding:1em;
+    padding: 1em 0;
     transition: .3s ease;
 }
 .list_item a:hover{
@@ -39,6 +44,7 @@
     border-radius: 5px;
     cursor: pointer;
     display: none;
+    
 }
 .bar{
     width: 1.8em;

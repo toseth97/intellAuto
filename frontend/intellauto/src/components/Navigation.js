@@ -15,19 +15,37 @@ const Navigation = () => {
                         IAS
                     </a>
                 </h1>
-                <ul className="unordered_list flex">
+                <ul
+                    className={
+                        clicked
+                            ? "unordered_list flex active"
+                            : "unordered_list flex"
+                    }
+                >
                     <li className="list_item">
-                        <a href="home" className="anchor_">
+                        <a
+                            href="#"
+                            onClick={() => menuClick()}
+                            className="anchor_"
+                        >
                             Home
                         </a>
                     </li>
                     <li className="list_item">
-                        <a href="home" className="anchor_">
+                        <a
+                            href="#"
+                            onClick={() => menuClick()}
+                            className="anchor_"
+                        >
                             About
                         </a>
                     </li>
                     <li className="list_item">
-                        <a href="home" className="anchor_">
+                        <a
+                            href="#"
+                            onClick={() => menuClick()}
+                            className="anchor_"
+                        >
                             Contact
                         </a>
                     </li>
