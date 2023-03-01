@@ -1,22 +1,19 @@
-:root {
-    --nav_back: #37517e;
-    --white_text: #ffffff;
-    --light_blue: #00a6eb;
-}
+
 
 .Nav_hero {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 70px;
-    background-color: transparent;
+    height: 80px;
+    z-index: 9;
+    background-color: var(--nav_back_blur);
+    backdrop-filter: blur(5px);
 }
 
 .Navigation_header {
     width: 100%;
     color: var(--white_text);
-    height: 70px;
-    z-index: 9;
+    height: 80px;
 
 }
 
@@ -32,16 +29,15 @@
 
 .list_item {
     cursor: pointer;
-    width: 8em;
     font-size: 15px;
     text-align: center;
-    padding: .5em 0;
+    padding: .3rem 0;
+    margin: 0 .5rem;
 }
 
 .list_item a {
-    width: 8em;
     display: block;
-    padding: 1em 0;
+    padding: 1em;
     transition: .3s ease;
 }
 

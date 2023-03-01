@@ -1,5 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&family=Tilt+Warp&display=swap');
+
+
+:root {
+  --nav_back: #37517e;
+  --white_text: #ffffff;
+  --light_blue: #00a6eb;
+  --light_blue_hover: #048cc7;
+  --nav_back_blur: #37517ed5;
+}
+
 *{
   padding: 0;
   margin: 0;

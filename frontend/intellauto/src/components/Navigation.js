@@ -46,6 +46,15 @@ const Navigation = () => {
                             onClick={() => menuClick()}
                             className="anchor_"
                         >
+                            Services
+                        </a>
+                    </li>
+                    <li className="list_item">
+                        <a
+                            href="#"
+                            onClick={() => menuClick()}
+                            className="anchor_"
+                        >
                             Contact
                         </a>
                     </li>

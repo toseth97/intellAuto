@@ -9,9 +9,9 @@
     width: 80%;
     min-height: 75vh;
     color: var(--white_text);
-    
+    background-color: var(--nav_back);
 }
-.hero_text h1{
+.heading_1{
     font-size: 3em;
 }
 .hero_text p{
@@ -19,32 +19,23 @@
 }
 
 .hero_text button{
-    margin-top: 3rem;
-    padding: .8rem 2rem;
+    margin: 2rem 0;
+    padding: .8rem 2.5rem;
     border-radius: 50px;
     border: none;
     font-size: .9rem;
     cursor: pointer;
-    animation: btnOscillate 1s ease-in-out infinite alternate;
+    transition: .3s ease-in-out;
     color: var(--white_text);
     background-color: var(--light_blue);
 }
-@keyframes btnOscillate {
-    0%{
-        transform: scale(.95);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
 
-.hero_image{
-    background: url("../images/hero-img.png");
-    background-size: cover;
-    background-position: center;
+.hero_text button:hover{
+    background-color: var(--light_blue_hover);
+}
+.hero_image img{
     width: 100%;
-    height: 100%;
-    animation: oscillate 3s ease-in-out infinite alternate;
+    animation: oscillate 2s ease-in-out infinite alternate;
 }
 
 @keyframes oscillate {
