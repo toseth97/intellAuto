@@ -1,7 +1,5 @@
+
 .frontpage{
-    width: 100%;
-    flex-direction: column;
-    padding-top: 3em;
     background-color: var(--nav_back);
 }
 .hero_section{

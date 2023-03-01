@@ -45,7 +45,11 @@
   text-decoration: none;
   color: var(--white_text);
 }
-
+.container{
+  width: 100%;
+  flex-direction: column;
+  padding-top: 3em;
+}
 
 
 

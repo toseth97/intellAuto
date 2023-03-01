@@ -2,8 +2,8 @@ import React from "react";
 
 const Frontpage = () => {
     return (
-        <section className=" frontpage d_flex">
-            <div className="hero_section container d_grid">
+        <section className=" frontpage container d_flex">
+            <div className="hero_section d_grid">
                 <div className="hero_text">
                     <h1 className="heading_1">
                         Better Solutions For Your Business
