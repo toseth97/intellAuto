@@ -8,8 +8,8 @@ const Navigation = () => {
         setClicked(!clicked);
     };
     return (
-        <header className="Nav_hero flex justify-center">
-            <nav className="Navigation_header padding_1_side flex justify-between">
+        <header className="Nav_hero d_flex j_center">
+            <nav className="Navigation_header padding_1_side d_flex j_between">
                 <h1 className="brand_name">
                     <a href="home" className="anchor_">
                         IAS
@@ -18,8 +18,8 @@ const Navigation = () => {
                 <ul
                     className={
                         clicked
-                            ? "unordered_list flex active"
-                            : "unordered_list flex"
+                            ? "unordered_list d_flex active"
+                            : "unordered_list d_flex"
                     }
                 >
                     <li className="list_item">
@@ -53,8 +53,8 @@ const Navigation = () => {
                 <div
                     className={
                         clicked
-                            ? "menu flex justify-center glow"
-                            : "menu flex justify-center"
+                            ? "menu d_flex j_center glow"
+                            : "menu d_flex j_center"
                     }
                     onClick={() => menuClick()}
                 >

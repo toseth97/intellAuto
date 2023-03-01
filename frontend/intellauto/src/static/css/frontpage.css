@@ -1,0 +1,59 @@
+.frontpage{
+    width: 100%;
+    flex-direction: column;
+    padding-top: 3em;
+    background-color: var(--nav_back);
+}
+.hero_section{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    min-height: 75vh;
+    color: var(--white_text);
+    
+}
+.hero_text h1{
+    font-size: 3em;
+}
+.hero_text p{
+    opacity: .6;
+}
+
+.hero_text button{
+    margin-top: 3rem;
+    padding: .8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: .9rem;
+    cursor: pointer;
+    animation: btnOscillate 1s ease-in-out infinite alternate;
+    color: var(--white_text);
+    background-color: var(--light_blue);
+}
+@keyframes btnOscillate {
+    0%{
+        transform: scale(.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.hero_image{
+    background: url("../images/hero-img.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    animation: oscillate 3s ease-in-out infinite alternate;
+}
+
+@keyframes oscillate {
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+
+}
+
