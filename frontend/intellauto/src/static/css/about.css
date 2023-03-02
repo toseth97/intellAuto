@@ -1,0 +1,10 @@
+.about_section{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_image{
+    width: 80%;
+}
+.about_image img{
+    width: 100%;
+}

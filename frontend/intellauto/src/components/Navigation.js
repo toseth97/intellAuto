@@ -11,7 +11,7 @@ const Navigation = () => {
         <header className="Nav_hero d_flex j_center">
             <nav className="Navigation_header padding_1_side d_flex j_between">
                 <h1 className="brand_name">
-                    <a href="home" className="anchor_">
+                    <a href="#home" className="anchor_">
                         IAS
                     </a>
                 </h1>
@@ -24,7 +24,7 @@ const Navigation = () => {
                 >
                     <li className="list_item">
                         <a
-                            href="#"
+                            href="#home"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >
@@ -33,7 +33,7 @@ const Navigation = () => {
                     </li>
                     <li className="list_item">
                         <a
-                            href="#"
+                            href="#about"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >

@@ -5,7 +5,7 @@
 .hero_section{
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
-    min-height: 75vh;
+    min-height: 80vh;
     color: var(--white_text);
     background-color: var(--nav_back);
 }
@@ -13,7 +13,7 @@
     font-size: 3em;
 }
 .hero_text p{
-    opacity: .6;
+    opacity: .8;
 }
 
 .hero_text button{

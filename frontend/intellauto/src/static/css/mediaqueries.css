@@ -30,19 +30,19 @@
     
     .unordered_list.active > .list_item:nth-child(1){
         left: 0;
-        animation: slidein .7s ease .3s forwards ;
+        animation: slidein .3s ease .3s forwards ;
     }
     .unordered_list.active > .list_item:nth-child(2){
         left: 0;
-        animation: slidein .7s ease .5s forwards ;
+        animation: slidein .3s ease .4s forwards ;
     }
     .unordered_list.active > .list_item:nth-child(3){
         left: 0;
-        animation: slidein .7s ease .7s forwards ;
+        animation: slidein .3s ease .5s forwards ;
     }
     .unordered_list.active > .list_item:nth-child(4){
         left: 0;
-        animation: slidein .7s ease .9s forwards ;
+        animation: slidein .3s ease .6s forwards ;
     }
 
     @keyframes slidein {
@@ -80,6 +80,13 @@
             transform: translateY(0);
         }
 
+    }
+
+    .about_section{
+        grid-template-columns: 1fr !important;
+    }
+    .small_text p{
+        text-align: justify;
     }
     
 }
