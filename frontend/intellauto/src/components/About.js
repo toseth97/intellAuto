@@ -1,6 +1,9 @@
 import React from "react";
 import about_image from "../static/images/isomeric.jpg";
 import codeTesting from "../static/images/codeTesting.jpg";
+import zoho from "../static/images/zoho.png";
+import sage from "../static/images/sage.png";
+import manager from "../static/images/manager.png";
 
 const About = () => {
     return (
@@ -55,6 +58,14 @@ const About = () => {
                             management, and customer relationship management
                             (CRM) software.
                         </p>
+                    </div>
+                </div>
+                <div className="partners d_flex">
+                    <h2>We partner with:</h2>
+                    <div className="slide d_flex j_center">
+                        <img src={zoho} />
+                        <img src={sage} />
+                        <img src={manager} />
                     </div>
                 </div>
             </div>

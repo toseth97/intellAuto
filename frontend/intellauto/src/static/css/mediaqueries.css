@@ -88,6 +88,11 @@
     .small_text p{
         text-align: justify;
     }
+
+    .slide img{
+        height: 1.7rem !important;
+        padding: 0 1rem !important;
+    }
     
 }
 @media screen and (max-width: 600px) {
