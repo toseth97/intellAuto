@@ -2,7 +2,7 @@
     background-color: #f3f5fa;
 }
 .service_card{
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     margin: .5rem;
     background-color: var(--white_text);
     box-shadow: 0px 0px 2px 0px var(--nav_back);
@@ -21,7 +21,39 @@
     width: 100%;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 2rem;
+    
 }
 .service_card img{
     width: 50px;
+}
+
+
+/***Call to action***/
+
+
+.call_to_action{
+    background: linear-gradient(var(--call_to_duty), var(--call_to_duty)), url("../images/call_to_action.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white_text);
+    padding-bottom: 2rem;
+}
+.call_section h1{
+    font-size: 1.6rem;
+}
+.call_section p{
+    opacity: .8;
+}
+.call_section>a>button{
+    margin: 2rem 0;
+    padding: .8rem 2.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--light_blue);
+    font-size: .9rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: var(--white_text);
+    background-color: transparent;
 }

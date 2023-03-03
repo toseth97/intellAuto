@@ -96,6 +96,9 @@
     .service_section{
         grid-template-columns: 1fr!important;
     }
+    .service_card img{
+        width: 60px !important;
+    }
    
     
 }
