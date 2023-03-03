@@ -11,6 +11,7 @@ function App() {
             <Frontpage />
             <About />
             <Services />
+            <CallToAction />
         </div>
     );
 }
