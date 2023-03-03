@@ -1,0 +1,27 @@
+#services{
+    background-color: #f3f5fa;
+}
+.service_card{
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--white_text);
+    box-shadow: 0px 0px 2px 0px var(--nav_back);
+    border-radius:.5rem;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.service_card:hover{
+    box-shadow: 5px 5px 2px 0px var(--nav_back);
+}
+.service_card h3{
+    font-size: .8rem;
+}
+.service_section{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2rem;
+}
+.service_card img{
+    width: 50px;
+}

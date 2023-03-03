@@ -1,6 +1,7 @@
 import Frontpage from "./components/Frontpage";
 import Navigation from "./components/Navigation";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Navigation />
             <Frontpage />
             <About />
+            <Services />
         </div>
     );
 }

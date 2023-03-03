@@ -93,6 +93,10 @@
         height: 1.7rem !important;
         padding: 0 1rem !important;
     }
+    .service_section{
+        grid-template-columns: 1fr!important;
+    }
+   
     
 }
 @media screen and (max-width: 600px) {

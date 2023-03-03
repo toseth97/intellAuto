@@ -32,12 +32,12 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about_image">
-                        <img src={about_image} alt="isomeric image" />
+                        <img src={about_image} alt="isomeric" />
                     </div>
                 </div>
                 <div className="about_section d_grid">
                     <div className="about_image">
-                        <img src={codeTesting} alt="isomeric image" />
+                        <img src={codeTesting} alt="code testing" />
                     </div>
                     <div className="hero_text small_text">
                         <p>
@@ -63,9 +63,9 @@ const About = () => {
                 <div className="partners d_flex">
                     <h2>We partner with:</h2>
                     <div className="slide d_flex j_center">
-                        <img src={zoho} />
-                        <img src={sage} />
-                        <img src={manager} />
+                        <img src={zoho} alt="Zoho" />
+                        <img src={sage} alt="Sage" />
+                        <img src={manager} alt="Manager" />
                     </div>
                 </div>
             </div>

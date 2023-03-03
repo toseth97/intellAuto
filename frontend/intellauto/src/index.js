@@ -5,6 +5,7 @@ import "./static/css/Navigation.css";
 import "./static/css/mediaqueries.css";
 import "./static/css/frontpage.css";
 import "./static/css/about.css";
+import "./static/css/service.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
