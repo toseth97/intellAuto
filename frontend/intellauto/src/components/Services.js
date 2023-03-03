@@ -36,14 +36,14 @@ const Services = () => {
                 <div className="under_line"></div>
                 <div className="small_text">
                     <p className="">
-                        Welcome to Intell Automated Systems' service page! We
-                        offer a wide range of IT solutions that are tailored to
-                        meet the needs of businesses of all sizes and
-                        industries. Our team of experts has extensive experience
-                        in web development, ERP integration, and database
-                        configuration, and we're committed to delivering
-                        high-quality services that exceed our clients'
-                        expectations. Here are some of the services we offer:
+                        At Intell Automated Systems, We offer a wide range of IT
+                        solutions that are tailored to meet the needs of
+                        businesses of all sizes and industries. Our team of
+                        experts has extensive experience in web development, ERP
+                        integration, and database configuration, and we're
+                        committed to delivering high-quality services that
+                        exceed our clients' expectations. Here are some of the
+                        services we offer:
                     </p>
                 </div>
                 <div className="service_section">
