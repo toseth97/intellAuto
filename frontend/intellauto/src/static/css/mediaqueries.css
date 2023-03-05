@@ -99,7 +99,9 @@
     .service_card img{
         width: 60px !important;
     }
-   
+    .contact{
+        grid-template-columns: 1fr!important;
+    }
     
 }
 @media screen and (max-width: 600px) {

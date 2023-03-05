@@ -42,7 +42,7 @@ const Navigation = () => {
                     </li>
                     <li className="list_item">
                         <a
-                            href="#"
+                            href="#Service"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >
@@ -51,7 +51,7 @@ const Navigation = () => {
                     </li>
                     <li className="list_item">
                         <a
-                            href="#"
+                            href="#Contact"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >
