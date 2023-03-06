@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
 import user_marker from "../static/images/user_marker.png";
@@ -27,15 +27,6 @@ const Contact = () => {
         long: 0,
         accuracy: 0,
     });
-
-    const options = {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0,
-    };
-    function error(err) {
-        console.warn(`ERROR(${err.code}): ${err.message}`);
-    }
 
     useEffect(() => {
         setTimeout(() => {
