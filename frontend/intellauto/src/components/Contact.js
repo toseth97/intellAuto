@@ -82,7 +82,7 @@ const Contact = () => {
             <span></span>
             <div className="container_fluid d_grid contact">
                 <div className="address d_flex j_center">
-                    <div className="address_text small_text">
+                    <div className="address_text small_text" data-aos="fade-up">
                         <div>
                             <p className="address_span">Office Address:</p> 20
                             Abake Abike St, Oluyole, Ibadan
@@ -95,7 +95,7 @@ const Contact = () => {
                             info@intellautomatedsystems.com
                         </div>
                     </div>
-                    <div className="map">
+                    <div className="map" data-aos="fade-up">
                         <MapContainer
                             center={[7.3655234, 3.8318511]}
                             zoom={13}
@@ -130,7 +130,7 @@ const Contact = () => {
                         </MapContainer>
                     </div>
                 </div>
-                <form className="contact_form">
+                <form className="contact_form" data-aos="fade-up">
                     <div>
                         <em>Don't be shy,</em>
                         <h3>Send Us A Message</h3>

@@ -2,7 +2,11 @@ import React from "react";
 
 const Frontpage = () => {
     return (
-        <section className=" frontpage container d_flex" id="home">
+        <section
+            className=" frontpage container d_flex"
+            id="home"
+            data-aos="fade-up"
+        >
             <div className="hero_section d_grid">
                 <div className="hero_text">
                     <h1 className="heading_1">

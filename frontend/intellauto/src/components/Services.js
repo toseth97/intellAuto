@@ -34,7 +34,7 @@ const Services = () => {
             <div className="container_fluid d_flex j_center">
                 <h2>OUR SERVICES</h2>
                 <div className="under_line"></div>
-                <div className="small_text">
+                <div className="small_text" data-aos="fade-up">
                     <p className="">
                         At Intell Automated Systems, We offer a wide range of IT
                         solutions that are tailored to meet the needs of

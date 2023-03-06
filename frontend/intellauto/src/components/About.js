@@ -11,7 +11,7 @@ const About = () => {
             <div className="container_fluid d_flex j_center">
                 <h2>ABOUT US</h2>
                 <div className="under_line"></div>
-                <div className="about_section d_grid">
+                <div className="about_section d_grid" data-aos="fade-up">
                     <div className="hero_text small_text">
                         <p>
                             Welcome to Intell Automated Systems, a leading IT
@@ -35,7 +35,7 @@ const About = () => {
                         <img src={about_image} alt="isomeric" />
                     </div>
                 </div>
-                <div className="about_section d_grid">
+                <div className="about_section d_grid" data-aos="fade-up">
                     <div className="about_image">
                         <img src={codeTesting} alt="code testing" />
                     </div>
@@ -60,7 +60,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="partners d_flex">
+                <div className="partners d_flex" data-aos="fade-up">
                     <h2>We partner with:</h2>
                     <div className="slide d_flex j_center">
                         <img src={zoho} alt="Zoho" />

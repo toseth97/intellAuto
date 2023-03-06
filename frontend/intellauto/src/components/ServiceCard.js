@@ -4,7 +4,7 @@ const ServiceCard = ({ item }) => {
     const { name, icon } = item;
 
     return (
-        <div className="service_card">
+        <div className="service_card" data-aos="fade-up">
             <img src={icon} alt={name} />
             <h3>{name}</h3>
             <div className="small_text"></div>
