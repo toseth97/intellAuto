@@ -1,3 +1,10 @@
+@media screen and (max-width: 950px) {
+    .leaflet-container{
+        width: 300px !important;
+        margin-bottom: 1rem;
+    }
+
+}
 @media screen and (max-width: 800px) {
     .heading_1{
         font-size: 2rem !important;
@@ -102,11 +109,51 @@
     .contact{
         grid-template-columns: 1fr!important;
     }
+    .leaflet-container{
+        width: 600px !important;
+    }
     
+}
+@media screen and (max-width: 700px) {
+    .leaflet-container{
+        width: 500px !important;
+        height: 400px !important;
+        margin-bottom: 1rem;
+    }
+
 }
 @media screen and (max-width: 600px) {
     .padding_1_side{
         padding: 0 1em;
+    }
+    .leaflet-container{
+        width: 400px !important;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .leaflet-container{
+        width: 320px !important;
+        margin-bottom: 1rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .leaflet-container{
+        width:300px !important;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .leaflet-container{
+        width:280px !important;
+    }
+
+}
+@media screen and (max-width: 290px) {
+    .leaflet-container{
+        width:230px !important;
+        height: 200px !important;
     }
 
 }

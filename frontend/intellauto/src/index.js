@@ -7,6 +7,7 @@ import "./static/css/frontpage.css";
 import "./static/css/about.css";
 import "./static/css/service.css";
 import "./static/css/contact.css";
+import "leaflet/dist/leaflet.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

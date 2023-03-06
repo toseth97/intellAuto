@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
 // eslint-disable-next-line
 
 const Contact = () => {
@@ -8,6 +11,8 @@ const Contact = () => {
         subject: "",
         message: "",
     });
+
+    const position = [7.3655234, 3.8318511];
 
     const handleChange = (e) => {
         setSendMail({
@@ -46,18 +51,42 @@ const Contact = () => {
             <span></span>
             <span></span>
             <div className="container_fluid d_grid contact">
-                <div className="address d_flex">
+                <div className="address d_flex j_center">
                     <div className="address_text small_text">
                         <p>
-                            <h3>Office Address:</h3> 20 Abake Abike St,
-                            Oluyole, Ibadan
+                            <p className="address_span">Office Address:</p> 20
+                            Abake Abike St, Oluyole, Ibadan
                         </p>
                         <p>
-                            <h3>Call:</h3> +2348035315145
+                            <p className="address_span">Call:</p> +2348035315145
                         </p>
                         <p>
-                            <h3>Email:</h3> info@intellautomatedsystems.com
+                            <p className="address_span">Email:</p>{" "}
+                            info@intellautomatedsystems.com
                         </p>
+                    </div>
+                    <div className="map">
+                        <MapContainer
+                            center={[7.3655234, 3.8318511]}
+                            zoom={13}
+                            scrollWheelZoom={false}
+                        >
+                            <TileLayer
+                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+
+                            <Marker
+                                position={position}
+                                icon={
+                                    new Icon({
+                                        iconUrl: markerIconPng,
+                                        iconSize: [20, 35],
+                                        iconAnchor: [12, 41],
+                                    })
+                                }
+                            />
+                        </MapContainer>
                     </div>
                 </div>
                 <form className="contact_form">

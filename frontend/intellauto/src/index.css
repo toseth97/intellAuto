@@ -72,3 +72,14 @@
   font-size: .9rem;
   padding: 5px 0;
 }
+
+footer{
+  position: fixed;
+  height: 50px;
+  background-color: var(--nav_back_blur);
+  color: var(--white_text);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 8;
+}
