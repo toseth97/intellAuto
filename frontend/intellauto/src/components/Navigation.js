@@ -6,6 +6,7 @@ const Navigation = () => {
     const menuClick = () => {
         setClicked(!clicked);
     };
+
     return (
         <header className="Nav_hero d_flex j_center">
             <nav className="Navigation_header padding_1_side d_flex j_between">

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
+import user_marker from "../static/images/user_marker.png";
 // eslint-disable-next-line
 
 const Contact = () => {
@@ -21,6 +22,44 @@ const Contact = () => {
         });
     };
 
+    const [location, setLocation] = useState({
+        lat: 0,
+        long: 0,
+        accuracy: 0,
+    });
+
+    const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0,
+    };
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (!navigator.geolocation) {
+                console.log(
+                    "Your browser doesn't support geolocation feature!"
+                );
+            } else {
+                navigator.geolocation.getCurrentPosition(getPosition);
+            }
+        }, 5000);
+    }, [location]);
+
+    function getPosition(position) {
+        //console.log(position);
+        setLocation({
+            lat: position.coords.latitude,
+            long: position.coords.longitude,
+            accuracy: position.coords.accuracy,
+        });
+    }
+    const user_lat = location.lat;
+    const user_long = location.long;
+    console.log(user_lat, user_long);
     return (
         <section className="container d_flex j_center background" id="contact">
             <span></span>
@@ -81,6 +120,17 @@ const Contact = () => {
                                 icon={
                                     new Icon({
                                         iconUrl: markerIconPng,
+                                        iconSize: [20, 35],
+                                        iconAnchor: [12, 41],
+                                    })
+                                }
+                            />
+
+                            <Marker
+                                position={[user_lat, user_long]}
+                                icon={
+                                    new Icon({
+                                        iconUrl: user_marker,
                                         iconSize: [20, 35],
                                         iconAnchor: [12, 41],
                                     })
