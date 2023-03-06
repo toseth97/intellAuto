@@ -4,7 +4,6 @@ const Navigation = () => {
     const [clicked, setClicked] = useState(false);
 
     const menuClick = () => {
-        console.log("Clicked");
         setClicked(!clicked);
     };
     return (
@@ -42,7 +41,7 @@ const Navigation = () => {
                     </li>
                     <li className="list_item">
                         <a
-                            href="#Service"
+                            href="#services"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >
@@ -51,7 +50,7 @@ const Navigation = () => {
                     </li>
                     <li className="list_item">
                         <a
-                            href="#Contact"
+                            href="#contact"
                             onClick={() => menuClick()}
                             className="anchor_"
                         >

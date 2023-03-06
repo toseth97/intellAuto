@@ -22,7 +22,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="container d_flex j_center background">
+        <section className="container d_flex j_center background" id="contact">
             <span></span>
             <span></span>
             <span></span>
@@ -53,17 +53,17 @@ const Contact = () => {
             <div className="container_fluid d_grid contact">
                 <div className="address d_flex j_center">
                     <div className="address_text small_text">
-                        <p>
+                        <div>
                             <p className="address_span">Office Address:</p> 20
                             Abake Abike St, Oluyole, Ibadan
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <p className="address_span">Call:</p> +2348035315145
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <p className="address_span">Email:</p>{" "}
                             info@intellautomatedsystems.com
-                        </p>
+                        </div>
                     </div>
                     <div className="map">
                         <MapContainer
