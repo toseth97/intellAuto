@@ -13,7 +13,7 @@ function App() {
         offset: 100,
         duration: 450,
         easing: "ease-in-sine",
-        //delay: 100,
+        delay: 150,
     });
 
     return (
