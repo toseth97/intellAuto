@@ -62,6 +62,10 @@ const Contact = () => {
                 </div>
                 <form className="contact_form">
                     <div>
+                        <em>Don't be shy,</em>
+                        <h3>Send Us A Message</h3>
+                    </div>
+                    <div>
                         <label>Sender name</label>
                         <input
                             type="text"

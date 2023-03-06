@@ -8,6 +8,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 5rem;
+    
     top: 0;
     left: 0;
     background: #37517e;
@@ -313,4 +314,16 @@
     background-color: var(--light_blue);
     color: var(--white_text);
     font-weight: bold;
+    transition: .3s ease-in-out;
+}
+.submit_div>button:hover{
+    background-color: var(--nav_back_blur);
+}
+.contact_form>div>em{
+    color: var(--white_text);
+    font-size: .8rem;
+}
+.contact_form>div>h3{
+    margin-bottom: 1rem;
+    color: var(--white_text);
 }
