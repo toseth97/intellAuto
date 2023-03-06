@@ -10,8 +10,8 @@ import "aos/dist/aos.css";
 
 function App() {
     AOS.init({
-        offset: 150,
-        duration: 600,
+        offset: 100,
+        duration: 450,
         easing: "ease-in-sine",
         //delay: 100,
     });
