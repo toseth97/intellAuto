@@ -42,7 +42,7 @@ export default function Frontpage() {
                         className={`space-y-6 md:space-y-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} flex flex-col justify-center`}
                     >
                         <div className="space-y-4 text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
+                            <h1 className="text-5xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
                                 Intelligent
                                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                                     {" "}
