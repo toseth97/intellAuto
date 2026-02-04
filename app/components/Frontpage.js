@@ -42,7 +42,7 @@ export default function Frontpage() {
                         className={`space-y-6 md:space-y-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} flex flex-col justify-center`}
                     >
                         <div className="space-y-4 text-center lg:text-left">
-                            <h1 className="text-5xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
+                            <h1 className=" text-5xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
                                 Intelligent
                                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                                     {" "}
@@ -66,9 +66,6 @@ export default function Frontpage() {
                             >
                                 Get Started
                             </Link>
-                            <button className="border-2 border-gray-300 text-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:border-gray-400 hover:text-gray-900 transition-all duration-300 hover:scale-105">
-                                Learn More
-                            </button>
                         </div>
 
                         <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-6 sm:pt-8 mx-auto lg:mx-0">
