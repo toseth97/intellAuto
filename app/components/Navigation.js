@@ -13,9 +13,13 @@ export default function Navigation() {
         // Toggle body scroll and blur effect
         if (!isMenuOpen) {
             document.body.style.overflow = "hidden";
+            document.body.style.position = "fixed";
+            document.body.style.width = "100%";
             document.body.style.backdropFilter = "blur(4px)";
         } else {
             document.body.style.overflow = "";
+            document.body.style.position = "";
+            document.body.style.width = "";
             document.body.style.backdropFilter = "";
         }
     };
@@ -23,6 +27,8 @@ export default function Navigation() {
     const closeMenu = () => {
         setIsMenuOpen(false);
         document.body.style.overflow = "";
+        document.body.style.position = "";
+        document.body.style.width = "";
         document.body.style.backdropFilter = "";
     };
 

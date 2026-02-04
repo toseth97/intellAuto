@@ -85,6 +85,21 @@ export default function Services() {
             link: "/services/custom-solutions",
         },
         {
+            title: "Full Stack Web Development",
+            description:
+                "Build modern, scalable web applications with cutting-edge technologies for frontend, backend, and database solutions.",
+            icon: "💻",
+            features: [
+                "Frontend Development",
+                "Backend APIs",
+                "Database Design",
+                "Responsive Design",
+            ],
+            badge: "Web Development",
+            color: "from-cyan-500 to-blue-600",
+            link: "/services/full-stack-web-development",
+        },
+        {
             title: "Consulting Services",
             description:
                 "Expert guidance and strategic planning to help you implement automation effectively across your organization.",
@@ -168,7 +183,10 @@ export default function Services() {
                                                 : service.color ===
                                                     "from-orange-500 to-red-600"
                                                   ? "bg-orange-100 text-orange-800"
-                                                  : "bg-gray-100 text-gray-800"
+                                                  : service.color ===
+                                                      "from-cyan-500 to-blue-600"
+                                                    ? "bg-cyan-100 text-cyan-800"
+                                                    : "bg-gray-100 text-gray-800"
                                     }`}
                                 >
                                     {service.badge}
