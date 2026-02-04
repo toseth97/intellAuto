@@ -1,3 +1,6 @@
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -24,7 +27,9 @@ export default function RootLayout({ children }) {
                 className={`${inter.variable} ${poppins.variable} font-sans`}
                 suppressHydrationWarning={true}
             >
+                <Navigation />
                 {children}
+                <Footer />
             </body>
         </html>
     );

@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Services() {
+    const router = useRouter();
     const [isVisible, setIsVisible] = useState(false);
 
     const services = [
@@ -194,8 +196,11 @@ export default function Services() {
                                 )}
                             </ul>
 
-                            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 sm:py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base">
-                                Learn More
+                            <button
+                                onClick={() => router.push("/get-started")}
+                                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 sm:py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base text-center block"
+                            >
+                                Get Started
                             </button>
                         </Link>
                     ))}
@@ -214,10 +219,16 @@ export default function Services() {
                             can revolutionize your operations.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                            <button className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base">
+                            <button
+                                onClick={() => router.push("/get-started")}
+                                className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base"
+                            >
                                 Get Started
                             </button>
-                            <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 text-sm sm:text-base">
+                            <button
+                                onClick={() => router.push("/contact")}
+                                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 text-sm sm:text-base"
+                            >
                                 Contact Sales
                             </button>
                         </div>

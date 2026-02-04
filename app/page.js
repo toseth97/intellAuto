@@ -10,13 +10,11 @@ import "./globals.css";
 export default function Home() {
     return (
         <main>
-            <Navigation />
             <Frontpage />
             <About />
             <Services />
             <CallToAction />
             <Contact />
-            <Footer />
         </main>
     );
 }

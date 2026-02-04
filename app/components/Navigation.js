@@ -53,7 +53,7 @@ export default function Navigation() {
                 className={`bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between h-16">
+                    <div className="flex mt-2 justify-between h-16">
                         <div className="flex items-center">
                             <Link
                                 href="/"
@@ -66,7 +66,7 @@ export default function Navigation() {
                             </Link>
                         </div>
 
-                        <div className="hidden md:flex md:space-x-8">
+                        <div className="hidden md:flex md:space-x-8 mt-2">
                             <Link
                                 href="#home"
                                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
@@ -131,38 +131,78 @@ export default function Navigation() {
                     </div>
                 </div>
 
+                {/* Mobile Menu - Slides from right to center */}
                 <div
-                    className={`${isMenuOpen ? "block animate-in slide-in-from-top-2 duration-300" : "hidden"} md:hidden bg-white border-t border-gray-200`}
+                    className={`fixed inset-0 z-50 md:hidden transition-all duration-300 ${
+                        isMenuOpen
+                            ? "opacity-100 pointer-events-auto"
+                            : "opacity-0 pointer-events-none"
+                    }`}
                 >
-                    <div className="pt-2 pb-3 space-y-1">
-                        <Link
-                            href="#home"
-                            className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
-                            onClick={closeMenu}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="#about"
-                            className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
-                            onClick={closeMenu}
-                        >
-                            About
-                        </Link>
-                        <Link
-                            href="#services"
-                            className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
-                            onClick={closeMenu}
-                        >
-                            Services
-                        </Link>
-                        <Link
-                            href="#contact"
-                            className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
-                            onClick={closeMenu}
-                        >
-                            Contact
-                        </Link>
+                    <div
+                        className={`absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-xl transform transition-transform duration-300 ${
+                            isMenuOpen ? "translate-x-0" : "translate-x-full"
+                        }`}
+                    >
+                        <div className="flex justify-between items-center p-4 border-b border-gray-200">
+                            <Link
+                                href="/"
+                                className="text-xl font-bold text-gray-800"
+                                onClick={closeMenu}
+                            >
+                                IntellAuto
+                            </Link>
+                            <button
+                                onClick={toggleMenu}
+                                className="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-300"
+                                aria-label="Close menu"
+                            >
+                                <svg
+                                    className="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="py-4 space-y-1">
+                            <Link
+                                href="#home"
+                                className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                                onClick={closeMenu}
+                            >
+                                Home
+                            </Link>
+                            <Link
+                                href="#about"
+                                className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                                onClick={closeMenu}
+                            >
+                                About
+                            </Link>
+                            <Link
+                                href="#services"
+                                className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                                onClick={closeMenu}
+                            >
+                                Services
+                            </Link>
+                            <Link
+                                href="#contact"
+                                className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                                onClick={closeMenu}
+                            >
+                                Contact
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </nav>

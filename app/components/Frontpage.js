@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Frontpage() {
     const [isVisible, setIsVisible] = useState(false);
@@ -59,9 +60,12 @@ export default function Frontpage() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 hover:scale-105">
+                            <Link
+                                href="/get-started"
+                                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 hover:scale-105 text-center"
+                            >
                                 Get Started
-                            </button>
+                            </Link>
                             <button className="border-2 border-gray-300 text-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:border-gray-400 hover:text-gray-900 transition-all duration-300 hover:scale-105">
                                 Learn More
                             </button>
