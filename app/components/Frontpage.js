@@ -43,12 +43,12 @@ export default function Frontpage() {
                     >
                         <div className="space-y-4 text-center lg:text-left">
                             <h1 className=" text-5xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
-                                Intelligent
+                                Intell
                                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                                     {" "}
-                                    Automation
+                                    Automated
                                 </span>
-                                Solutions
+                                Systems
                             </h1>
                             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
                                 Revolutionizing the future of automation with
