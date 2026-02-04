@@ -139,7 +139,7 @@ export default function Services() {
     }, []);
 
     return (
-        <section id="services" className="py-16 sm:py-20 bg-white">
+        <section id="services" className="py-16 sm:py-20 bg-white mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                     className={`text-center space-y-6 mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}

@@ -74,28 +74,34 @@ export default function Navigation() {
 
                         <div className="hidden md:flex md:space-x-8 mt-2">
                             <Link
-                                href="#home"
+                                href="/"
                                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                             >
                                 Home
                             </Link>
                             <Link
-                                href="#about"
+                                href="/about"
                                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                             >
                                 About
                             </Link>
                             <Link
-                                href="#services"
+                                href="/services"
                                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                             >
                                 Services
                             </Link>
                             <Link
-                                href="#contact"
+                                href="/contact"
                                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                             >
                                 Contact
+                            </Link>
+                            <Link
+                                href="/careers"
+                                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                            >
+                                Careers
                             </Link>
                         </div>
 
@@ -181,32 +187,39 @@ export default function Navigation() {
 
                         <div className="py-4 space-y-1">
                             <Link
-                                href="#home"
+                                href="/"
                                 className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
                                 onClick={closeMenu}
                             >
                                 Home
                             </Link>
                             <Link
-                                href="#about"
+                                href="/about"
                                 className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
                                 onClick={closeMenu}
                             >
                                 About
                             </Link>
                             <Link
-                                href="#services"
+                                href="/services"
                                 className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
                                 onClick={closeMenu}
                             >
                                 Services
                             </Link>
                             <Link
-                                href="#contact"
+                                href="/contact"
                                 className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
                                 onClick={closeMenu}
                             >
                                 Contact
+                            </Link>
+                            <Link
+                                href="/careers"
+                                className="block px-6 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                                onClick={closeMenu}
+                            >
+                                Careers
                             </Link>
                         </div>
                     </div>

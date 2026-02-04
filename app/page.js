@@ -12,9 +12,8 @@ export default function Home() {
         <main>
             <Frontpage />
             <About />
-            <Services />
+
             <CallToAction />
-            <Contact />
         </main>
     );
 }
