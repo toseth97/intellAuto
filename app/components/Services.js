@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Services() {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,6 +18,9 @@ export default function Services() {
                 "Smart Decision Making",
                 "Continuous Learning",
             ],
+            badge: "AI Excellence",
+            color: "from-blue-500 to-purple-600",
+            link: "/services/ai-automation",
         },
         {
             title: "Robotic Process Automation",
@@ -29,6 +33,9 @@ export default function Services() {
                 "Error Reduction",
                 "Scalable Solutions",
             ],
+            badge: "RPA Ready",
+            color: "from-purple-500 to-pink-600",
+            link: "/services/rpa",
         },
         {
             title: "Intelligent Analytics",
@@ -41,6 +48,9 @@ export default function Services() {
                 "Data Visualization",
                 "Custom Reports",
             ],
+            badge: "Data-Driven",
+            color: "from-green-500 to-blue-600",
+            link: "/services/analytics",
         },
         {
             title: "Cloud Integration",
@@ -53,6 +63,9 @@ export default function Services() {
                 "Scalable Infrastructure",
                 "API Integration",
             ],
+            badge: "Cloud-Ready",
+            color: "from-blue-500 to-purple-600",
+            link: "/services/cloud-integration",
         },
         {
             title: "Custom Solutions",
@@ -65,6 +78,9 @@ export default function Services() {
                 "Flexible Architecture",
                 "Future-proof Design",
             ],
+            badge: "Custom-Built",
+            color: "from-orange-500 to-red-600",
+            link: "/services/custom-solutions",
         },
         {
             title: "Consulting Services",
@@ -77,6 +93,9 @@ export default function Services() {
                 "Training Programs",
                 "Ongoing Support",
             ],
+            badge: "Expert Advice",
+            color: "from-gray-600 to-gray-800",
+            link: "/services/consulting",
         },
     ];
 
@@ -124,29 +143,34 @@ export default function Services() {
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {services.map((service, index) => (
-                        <div
+                        <Link
                             key={index}
+                            href={service.link}
                             className={`group bg-gray-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200 transform hover:scale-105 transition-transform duration-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} delay-${index * 100}`}
                         >
                             <div className="flex items-center justify-between mb-4 sm:mb-6">
                                 <div className="text-3xl sm:text-4xl">
                                     {service.icon}
                                 </div>
-                                <div className="w-8 h-8 bg-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg
-                                        className="w-4 h-4 text-white"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                        />
-                                    </svg>
-                                </div>
+                                <span
+                                    className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                                        service.color ===
+                                        "from-blue-500 to-purple-600"
+                                            ? "bg-blue-100 text-blue-800"
+                                            : service.color ===
+                                                "from-purple-500 to-pink-600"
+                                              ? "bg-purple-100 text-purple-800"
+                                              : service.color ===
+                                                  "from-green-500 to-blue-600"
+                                                ? "bg-green-100 text-green-800"
+                                                : service.color ===
+                                                    "from-orange-500 to-red-600"
+                                                  ? "bg-orange-100 text-orange-800"
+                                                  : "bg-gray-100 text-gray-800"
+                                    }`}
+                                >
+                                    {service.badge}
+                                </span>
                             </div>
 
                             <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -173,7 +197,7 @@ export default function Services() {
                             <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 sm:py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base">
                                 Learn More
                             </button>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
