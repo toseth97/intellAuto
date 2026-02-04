@@ -205,8 +205,8 @@ export default function Footer() {
                 <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
                         © {new Date().getFullYear()}{" "}
-                        <h6 className="inline text-bolder">IntellAuto</h6>. All
-                        rights reserved.
+                        <span className="inline font-bold">IntellAuto</span>.
+                        All rights reserved.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                         <a
