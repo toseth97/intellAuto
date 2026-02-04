@@ -1,23 +1,15 @@
-import Frontpage from "./components/Frontpage";
 import Navigation from "./components/Navigation";
+import Frontpage from "./components/Frontpage";
 import About from "./components/About";
 import Services from "./components/Services";
 import CallToAction from "./components/CallToAction";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import "./globals.css";
 
-function App() {
-    AOS.init({
-        offset: 100,
-        duration: 450,
-        easing: "ease-in-sine",
-        delay: 150,
-    });
-
+export default function Home() {
     return (
-        <div className="App">
+        <main>
             <Navigation />
             <Frontpage />
             <About />
@@ -25,8 +17,6 @@ function App() {
             <CallToAction />
             <Contact />
             <Footer />
-        </div>
+        </main>
     );
 }
-
-export default App;

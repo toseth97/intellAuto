@@ -1,0 +1,36 @@
+{
+  "name": "intellauto",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@next/font": "^14.2.15",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.31.0",
+    "leaflet": "^1.9.4",
+    "next": "^16.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
