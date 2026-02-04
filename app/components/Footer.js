@@ -54,7 +54,7 @@ export default function Footer() {
                             </p>
                             <div className="flex gap-3 sm:gap-4">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                                 >
                                     <svg
@@ -66,7 +66,7 @@ export default function Footer() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                                 >
                                     <svg
@@ -78,7 +78,7 @@ export default function Footer() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                                 >
                                     <svg
@@ -90,7 +90,7 @@ export default function Footer() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                                 >
                                     <svg
@@ -112,7 +112,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-gray-400 text-sm sm:text-base">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/services/ai-automation"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     AI-Powered Automation
@@ -120,7 +120,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/services/rpa"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Robotic Process Automation
@@ -128,7 +128,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/services/analytics"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Intelligent Analytics
@@ -136,7 +136,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/services/cloud-integration"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Cloud Integration
@@ -144,7 +144,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/services/custom-solutions"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Custom Solutions
@@ -160,7 +160,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-gray-400 text-sm sm:text-base">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/about"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     About Us
@@ -168,7 +168,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/careers"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Careers
@@ -176,7 +176,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/blog"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Blog
@@ -184,18 +184,10 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/contact"
                                     className="hover:text-white transition-colors duration-300 block py-1"
                                 >
                                     Contact
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-white transition-colors duration-300 block py-1"
-                                >
-                                    Privacy Policy
                                 </a>
                             </li>
                         </ul>
@@ -208,26 +200,6 @@ export default function Footer() {
                         <span className="inline font-bold">IntellAuto</span>.
                         All rights reserved.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-                        <a
-                            href="#"
-                            className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-300"
-                        >
-                            Terms of Service
-                        </a>
-                        <a
-                            href="#"
-                            className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-300"
-                        >
-                            Privacy Policy
-                        </a>
-                        <a
-                            href="#"
-                            className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-300"
-                        >
-                            Cookie Policy
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>
